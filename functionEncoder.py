@@ -17,6 +17,7 @@ def main():
         userInput += (hex(ord(cmdInput[c])))
 
     userInput = userInput.replace("0x", '')
+    print("====== USING OFFSET " + str(offset) + " ======")
     print("Hex before encode = " + userInput)
     #only hex nubmers from C
 

@@ -1,7 +1,7 @@
 import sys
 
 def main():
-    offset = 197
+    offset = 1
 
     file = open('encPayload.txt', 'r')
     #open file
@@ -18,6 +18,7 @@ def main():
     #only hex nubmers from C
 
     encodedHex = '"'
+    print("====== USING OFFSET " + str(offset) + " ======")
     print("Decoding Data: " + data[:50])
     for i in range(0,len(data),2):
         hexByte = data[i:(i + 2)]

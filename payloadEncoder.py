@@ -26,6 +26,7 @@ def main():
                 return
 
     encodedHex = '"'
+    print("====== USING OFFSET " + str(offset) + " ======")
     print("Encoding Data: " + data[:50])
     for i in range(0,len(data),2):
         hexByte = data[i:(i + 2)]
